@@ -10,7 +10,7 @@ const config: Config = {
         dark: siteConfig.colors.darkBg,
         accent: siteConfig.colors.accent,
         primarytext: siteConfig.colors.textPrimary,
-        secondarytext: siteConfig.colors.textSecondary
+        secondarytext: siteConfig.colors.textSecondary,
       },
     },
   },
