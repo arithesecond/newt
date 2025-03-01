@@ -1,5 +1,10 @@
 ---
 import '$lib/styles/global.css';
+import config from '@config';
+
+const gradientBase: string = config.colors.baseBg + 'FF';
+const gradientEnd: string = config.colors.baseBg + '00';
+const imageSrc = `url(${config.image.src ?? ''})`;
 ---
 
 <!doctype html>
@@ -11,5 +16,12 @@ import '$lib/styles/global.css';
     <meta name="generator" content={Astro.generator} />
     <title>Newt</title>
   </head>
-  <body class="size-full p-2"></body>
+  <body class:list={['size-full p-2', { 'bg-image': config.image.enabled }]}></body>
 </html>
+
+<style define:vars={{ gradientBase, gradientEnd, imageSrc }}>
+  .bg-image {
+    background-image: linear-gradient(var(--gradientBase), var(--gradientEnd)), var(--imageSrc);
+    background-size: cover;
+  }
+</style>
