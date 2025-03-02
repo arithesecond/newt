@@ -51,6 +51,7 @@ type TConfig = {
   greetings: TGreetings;
   image: TBackgroundImage;
   locale: TLanguageCode;
+  midgap: number;
   name: string;
   time: TTime;
   weather: TWeather;

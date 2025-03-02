@@ -2,6 +2,7 @@ import type { TConfig } from '$lib/types/config.types';
 const config: TConfig = {
   name: 'April',
   locale: 'en',
+  midgap: 24, // Gap between buttons and the time/weather (in Tailwind size units)
   colors: {
     baseBg: '#1E1E2E',
     darkBg: '#181825',

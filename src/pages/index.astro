@@ -20,7 +20,10 @@ const imageSrc = `url(${config.image.src ?? ''})`;
     <title>Newt</title>
   </head>
   <body
-    class:list={['flex size-full flex-col items-center justify-center gap-24', { 'bg-image': config.image.enabled }]}
+    class:list={[
+      'gap-config flex size-full flex-col items-center justify-center',
+      { 'bg-image': config.image.enabled },
+    ]}
   >
     <div class="flex gap-64">
       <div class="flex flex-col items-center justify-center gap-3">
@@ -52,9 +55,13 @@ const imageSrc = `url(${config.image.src ?? ''})`;
   </body>
 </html>
 
-<style define:vars={{ gradientBase, gradientEnd, imageSrc }}>
+<style define:vars={{ gradientBase, gradientEnd, imageSrc, gapSize: `${config.midgap}rem` }}>
   .bg-image {
     background-image: linear-gradient(var(--gradientBase), var(--gradientEnd)), var(--imageSrc);
     background-size: cover;
+  }
+
+  .gap-config {
+    gap: calc(var(--gapSize) / 4);
   }
 </style>
