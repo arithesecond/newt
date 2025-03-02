@@ -32,7 +32,7 @@ Setting up Newt couldn't be simpler, just follow the steps below!
 1. [Get a local copy](#getting-a-local-copy)
 2. [Customize](#customizing)
 3. [Deploy your site](#deploying)
-4. Set it as your newtab page
+4. [Set it as your newtab page](#set-newt-as-your-newtab)
 5. Enojy!
 
 ## Getting a Local Copy
