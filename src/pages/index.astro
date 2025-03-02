@@ -1,6 +1,7 @@
 ---
 import '$lib/styles/global.css';
 import config from '@config';
+import Buttons from '$lib/components/Buttons.astro';
 
 const gradientBase: string = config.colors.baseBg + 'FF';
 const gradientEnd: string = config.colors.baseBg + '00';
@@ -16,7 +17,9 @@ const imageSrc = `url(${config.image.src ?? ''})`;
     <meta name="generator" content={Astro.generator} />
     <title>Newt</title>
   </head>
-  <body class:list={['size-full p-2', { 'bg-image': config.image.enabled }]}></body>
+  <body class:list={['flex size-full items-center justify-center', { 'bg-image': config.image.enabled }]}>
+    <Buttons buttons={config.buttons} />
+  </body>
 </html>
 
 <style define:vars={{ gradientBase, gradientEnd, imageSrc }}>

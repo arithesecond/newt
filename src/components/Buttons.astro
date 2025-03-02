@@ -1,0 +1,42 @@
+---
+import type { TButton } from '$lib/types/config.types';
+const { buttons }: { buttons: TButton[] } = Astro.props;
+---
+
+<div class="flex flex-col gap-2">
+  <div class="flex justify-center gap-2">
+    {
+      buttons.slice(0, 6).map((button) => (
+        <a
+          class="bg-dark hover:bg-accent flex h-35 w-45 items-center justify-center rounded-md p-4 shadow-xl transition-all duration-200 ease-in-out hover:-translate-y-[3px] hover:text-base"
+          href={button.href}
+          title={button.name}
+        >
+          <i data-lucide={button.icon} class="size-8" />
+        </a>
+      ))
+    }
+  </div>
+  {
+    buttons[6] && (
+      /* Only renders if there are 6 or more buttons */
+      <div class="flex justify-center gap-2">
+        {buttons.slice(6, 12).map((button) => (
+          <a
+            class="bg-dark hover:bg-accent flex h-35 w-45 items-center justify-center rounded-md p-4 shadow-xl transition-all duration-200 ease-in-out hover:-translate-y-[3px] hover:text-base"
+            href={button.href}
+            title={button.name}
+          >
+            <i data-lucide={button.icon} class="size-8" />
+          </a>
+        ))}
+      </div>
+    )
+  }
+</div>
+
+<script>
+  // Render lucide icons
+  import { createIcons, icons } from 'lucide';
+  createIcons({ icons });
+</script>

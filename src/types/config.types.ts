@@ -42,7 +42,7 @@ type TWeather = {
   units: 'imperial' | 'metric' | 'standard';
 };
 
-export type TConfig = {
+type TConfig = {
   buttons: TButton[];
   colors: TColors;
   dateFormat: Intl.DateTimeFormatOptions;
@@ -52,3 +52,5 @@ export type TConfig = {
   time: TTime;
   weather: TWeather;
 };
+
+export type { TConfig, TButton };
