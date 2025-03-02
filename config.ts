@@ -57,7 +57,7 @@ const config: TConfig = {
 
   // Config for an optional background image
   image: {
-    enabled: false,
+    enabled: true,
     src: '/background-image.png',
   },
 

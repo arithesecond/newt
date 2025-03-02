@@ -3,6 +3,7 @@ import '$lib/styles/global.css';
 import config from '@config';
 import Buttons from '$lib/components/Buttons.astro';
 import Clock from '$lib/components/Clock.svelte';
+import Weather from '$lib/components/Weather.astro';
 
 const gradientBase: string = config.colors.baseBg + 'FF';
 const gradientEnd: string = config.colors.baseBg + '00';
@@ -44,6 +45,7 @@ const imageSrc = `url(${config.image.src ?? ''})`;
       </div>
       <div>
         <span class="text-8xl font-bold">{new Date().toLocaleDateString(config.locale, config.dateFormat)}</span>
+        <Weather />
       </div>
     </div>
     <Buttons />
