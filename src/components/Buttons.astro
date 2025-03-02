@@ -1,12 +1,12 @@
 ---
 import config from '@config';
-const buttons = config.buttons;
+const bconfig = config.buttons;
 ---
 
-<div class="flex flex-col gap-2">
-  <div class="flex justify-center gap-2">
+<div class="gap-config flex flex-col">
+  <div class="gap-config flex justify-center">
     {
-      buttons.slice(0, 6).map((button) => (
+      bconfig.buttons.slice(0, 6).map((button) => (
         <a
           class="bg-dark hover:bg-accent flex h-35 w-45 items-center justify-center rounded-md p-4 shadow-xl transition-all duration-200 ease-in-out hover:-translate-y-[3px] hover:text-base"
           href={button.href}
@@ -18,10 +18,10 @@ const buttons = config.buttons;
     }
   </div>
   {
-    buttons[6] && (
+    bconfig.buttons[6] && (
       /* Only renders if there are 6 or more buttons */
-      <div class="flex justify-center gap-2">
-        {buttons.slice(6, 12).map((button) => (
+      <div class="gap-config flex justify-center">
+        {bconfig.buttons.slice(6, 12).map((button) => (
           <a
             class="bg-dark hover:bg-accent flex h-35 w-45 items-center justify-center rounded-md p-4 shadow-xl transition-all duration-200 ease-in-out hover:-translate-y-[3px] hover:text-base"
             href={button.href}
@@ -34,6 +34,12 @@ const buttons = config.buttons;
     )
   }
 </div>
+
+<style define:vars={{ gapSize: `${bconfig.gap}rem` }}>
+  .gap-config {
+    gap: calc(var(--gapSize) / 4);
+  }
+</style>
 
 <script>
   // Render lucide icons

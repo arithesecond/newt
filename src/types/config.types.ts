@@ -6,9 +6,12 @@ type TBackgroundImage = {
 };
 
 type TButton = {
-  name: string;
-  icon: string;
-  href: string;
+  gap: number;
+  buttons: {
+    name: string;
+    icon: string;
+    href: string;
+  }[];
 };
 
 type TColors = {
@@ -42,7 +45,7 @@ type TWeather = {
 };
 
 type TConfig = {
-  buttons: TButton[];
+  buttons: TButton;
   colors: TColors;
   dateFormat: Intl.DateTimeFormatOptions;
   greetings: TGreetings;

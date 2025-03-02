@@ -12,52 +12,55 @@ const config: TConfig = {
 
   // Defines the buttons that get rendered.
   // Uses lucide for icons. Define up to 12.
-  buttons: [
-    {
-      name: 'Newt GitHub',
-      href: 'https://github.com/arithefirst/newt',
-      icon: 'github',
-    },
-    {
-      name: 'Amazon',
-      href: 'https://amazon.com',
-      icon: 'shopping-cart',
-    },
-    {
-      name: 'Gmail',
-      href: 'https://mail.google.com',
-      icon: 'mail',
-    },
-    {
-      name: 'Google',
-      href: 'https://google.com',
-      icon: 'search',
-    },
-    {
-      name: 'Google Calendar',
-      href: 'https://calendar.google.com',
-      icon: 'calendar',
-    },
-    {
-      name: 'Spotify',
-      href: 'https://open.spotify.com',
-      icon: 'music',
-    },
-    {
-      name: 'Twitch',
-      href: 'https://twitch.tv',
-      icon: 'twitch',
-    },
-    {
-      name: 'YouTube',
-      href: 'https://youtube.com',
-      icon: 'youtube',
-    },
-  ],
+  buttons: {
+    gap: 6, // Gap between buttons (in Tailwind size units)
+    buttons: [
+      {
+        name: 'Newt GitHub',
+        href: 'https://github.com/arithefirst/newt',
+        icon: 'github',
+      },
+      {
+        name: 'Amazon',
+        href: 'https://amazon.com',
+        icon: 'shopping-cart',
+      },
+      {
+        name: 'Gmail',
+        href: 'https://mail.google.com',
+        icon: 'mail',
+      },
+      {
+        name: 'Google',
+        href: 'https://google.com',
+        icon: 'search',
+      },
+      {
+        name: 'Google Calendar',
+        href: 'https://calendar.google.com',
+        icon: 'calendar',
+      },
+      {
+        name: 'Spotify',
+        href: 'https://open.spotify.com',
+        icon: 'music',
+      },
+      {
+        name: 'Twitch',
+        href: 'https://twitch.tv',
+        icon: 'twitch',
+      },
+      {
+        name: 'YouTube',
+        href: 'https://youtube.com',
+        icon: 'youtube',
+      },
+    ],
+  },
 
   // Config for an optional background image
   image: {
-    enabled: true,
+    enabled: false,
     src: '/background-image.png',
   },
 
