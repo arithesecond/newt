@@ -1,6 +1,6 @@
 ---
-import type { TButton } from '$lib/types/config.types';
-const { buttons }: { buttons: TButton[] } = Astro.props;
+import config from '@config';
+const buttons = config.buttons;
 ---
 
 <div class="flex flex-col gap-2">
