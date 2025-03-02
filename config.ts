@@ -15,7 +15,42 @@ const config: TConfig = {
     {
       name: 'Newt GitHub',
       href: 'https://github.com/arithefirst/newt',
-      icon: 'app-window',
+      icon: 'github',
+    },
+    {
+      name: 'Amazon',
+      href: 'https://amazon.com',
+      icon: 'shopping-cart',
+    },
+    {
+      name: 'Gmail',
+      href: 'https://mail.google.com',
+      icon: 'mail',
+    },
+    {
+      name: 'Google',
+      href: 'https://google.com',
+      icon: 'search',
+    },
+    {
+      name: 'Google Calendar',
+      href: 'https://calendar.google.com',
+      icon: 'calendar',
+    },
+    {
+      name: 'Spotify',
+      href: 'https://open.spotify.com',
+      icon: 'music',
+    },
+    {
+      name: 'Twitch',
+      href: 'https://twitch.tv',
+      icon: 'twitch',
+    },
+    {
+      name: 'YouTube',
+      href: 'https://youtube.com',
+      icon: 'youtube',
     },
   ],
 
