@@ -66,7 +66,7 @@ const config: TConfig = {
     morning: 'Good morning',
     evening: 'Good evening',
     night: 'Good evening',
-    late: 'Go to bed',
+    late: 'Go to Sleep',
     punc: '!', // Punctiation at the end of the greeting (Use '' to disable)
   },
 
