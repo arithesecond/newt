@@ -36,11 +36,11 @@ const imageSrc = `url(${config.image.src ?? ''})`;
               if (hour >= 23 || hour < 6) {
                 return `${config.greetings.late}, ${config.name}${config.greetings.punc}`;
               } else if (hour >= 6 && hour < 12) {
-                return `${config.greetings.night}, ${config.name}${config.greetings.punc}`;
+                return `${config.greetings.morning}, ${config.name}${config.greetings.punc}`;
               } else if (hour >= 12 && hour < 17) {
                 return `${config.greetings.evening}, ${config.name}${config.greetings.punc}`;
               } else {
-                return `${config.greetings.morning}, ${config.name}${config.greetings.punc}`;
+                return `${config.greetings.night}, ${config.name}${config.greetings.punc}`;
               }
             }
           }

@@ -102,9 +102,9 @@ Newt's behavior is controlled by `config.ts`. Below is an overview of each secti
 
     | Greeting | 24‑hour range | 12‑hour range    |
     | -------- | ------------- | ---------------- |
-    | morning  | 17:00–22:59   | 5:00 PM–10:59 PM |
+    | morning  | 06:00–11:59   | 6:00 AM–11:59 AM |
     | evening  | 12:00–16:59   | 12:00 PM–4:59 PM |
-    | night    | 06:00–11:59   | 6:00 AM–11:59 AM |
+    | night    | 17:00–22:59   | 5:00 PM–10:59 PM |
     | late     | 23:00–05:59   | 11:00 PM–5:59 AM |
 
 - **dateFormat:** Conventional date formatting rules (e.g., month/day style). API compatible with the JavaScript `new Date().toLocaleString()` options input.
