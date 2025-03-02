@@ -5,4 +5,7 @@
 
 <p align="center">A no-frills custom newtab page</p>
 
-[![Prettier](https://github.com/arithefirst/newt/actions/workflows/prettier.yml/badge.svg)](https://github.com/arithefirst/newt/actions/workflows/prettier.yml)
+<p align="center">
+    <img src="https://github.com/arithefirst/newt/actions/workflows/prettier.yml/badge.svg" href="https://github.com/arithefirst/newt/actions/workflows/prettier.yml">
+    <img src="https://github.com/arithefirst/newt/actions/workflows/eslint.yml/badge.svg" href="https://github.com/arithefirst/newt/actions/workflows/eslint.yml">
+</p>
