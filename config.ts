@@ -1,6 +1,7 @@
 import type { TConfig } from '$lib/types/config.types';
 const config: TConfig = {
   name: 'April',
+  locale: 'en',
   colors: {
     baseBg: '#1E1E2E',
     darkBg: '#181825',
@@ -91,7 +92,6 @@ const config: TConfig = {
       lat: '40.776676', // Your latitude
       long: '-73.971321', // Your longitude
     },
-    lang: 'en',
     openWeatherKey: '', // Get an API Key at https://openweathermap.org/api/one-call-3#start
     units: 'metric', // metric = C°, imperial = F°, standard = K
   },

@@ -37,7 +37,6 @@ type TWeather = {
     lat: string;
     long: string;
   };
-  lang: TLanguageCode;
   openWeatherKey: string;
   units: 'imperial' | 'metric' | 'standard';
 };
@@ -48,6 +47,7 @@ type TConfig = {
   dateFormat: Intl.DateTimeFormatOptions;
   greetings: TGreetings;
   image: TBackgroundImage;
+  locale: TLanguageCode;
   name: string;
   time: TTime;
   weather: TWeather;

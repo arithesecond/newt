@@ -21,10 +21,11 @@ const imageSrc = `url(${config.image.src ?? ''})`;
   <body
     class:list={['flex size-full flex-col items-center justify-center gap-24', { 'bg-image': config.image.enabled }]}
   >
-    <div class="flex">
+    <div class="flex gap-64">
       <div class="flex flex-col items-center justify-center gap-3">
         <Clock client:load />
-        <div class="font text-3xl">
+        <!-- Greeting -->
+        <span class="text-3xl">
           {
             () => {
               const hour = new Date().getHours();
@@ -39,7 +40,10 @@ const imageSrc = `url(${config.image.src ?? ''})`;
               }
             }
           }
-        </div>
+        </span>
+      </div>
+      <div>
+        <span class="text-8xl font-bold">{new Date().toLocaleDateString(config.locale, config.dateFormat)}</span>
       </div>
     </div>
     <Buttons />
