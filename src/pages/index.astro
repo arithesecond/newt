@@ -7,7 +7,9 @@ import Weather from '$lib/components/Weather.astro';
 
 const gradientBase: string = config.colors.baseBg + 'FF';
 const gradientEnd: string = config.colors.baseBg + '00';
-const imageSrc = `url(${config.image.src ?? ''})`;
+const src = config.image.src ?? '';
+const prefixedSrc = src.match(/^https?:\/\//) ? src : `/newt/${src}`;
+const imageSrc = `url(${prefixedSrc})`;
 ---
 
 <!doctype html>
