@@ -59,8 +59,6 @@ Before anything else, you need a copy of Newt on your computer. Make sure that y
 
    This will install all of the dependencies you need to preview your changes locally.
 
-You are now ready to continue to the
-
 ## Customizing
 
 > [!TIP]
