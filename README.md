@@ -135,10 +135,12 @@ Newt's behavior is controlled by `config.ts`. Below is an overview of each secti
 
 To deploy Newt to a website, we're going to use GitHub pages for the sake of simplicity.
 
-1. Open the repository’s "Settings" tab.
-2. In the "Pages" section, set "Source" to "GitHub Actions"
-3. Go back to your CLI, and run `git commit -am "Update config"`, and then `git push` to send your changes to the remote repo.
-4. Visit the provided GitHub Pages URL to see your deployed site. Unless you named your fork something other than "newt", your url should be `https://[yourusername].github.io/newt`, where `[yourusername]` is your github username.
+1. Click the "Actions" button in the bar at the top
+2. Click the "I understand my workdlows" button
+3. Open the repository’s "Settings" tab.
+4. In the "Pages" section, set "Source" to "GitHub Actions"
+5. Go back to your CLI, and run `git commit -am "Update config"`, and then `git push` to send your changes to the remote repo.
+6. Visit the provided GitHub Pages URL to see your deployed site. Unless you named your fork something other than "newt", your url should be `https://[yourusername].github.io/newt`, where `[yourusername]` is your github username.
 
 ## Set Newt as your newtab
 
