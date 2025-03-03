@@ -125,7 +125,7 @@ Newt's behavior is controlled by `config.ts`. Below is an overview of each secti
 > - Go to the settings tab of your fork
 > - Click on "Secrets and variables" and then "Actions" in the menu that appears under it
 > - Click "New Repository Secret"
-> - Set the name to be `PUBLIC_WEATHER_API_KEY`
+> - Set the name to be `WEATHER_API_KEY`
 > - Set the secret to be the API Key you got from OpenWeatherMap
 > - Click "New Secret"
 >

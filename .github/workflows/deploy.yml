@@ -13,12 +13,12 @@ permissions:
 
 jobs:
   build:
+    env:
+      SECRET_WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v4
-      - name: Load OpenWeatherMap key
-        run: echo ${{ secrets.PUBLIC_WEATHER_API_KEY }} >> .env
       - name: Install, build, and upload your site
         uses: withastro/action@v3
         with:
