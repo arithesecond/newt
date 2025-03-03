@@ -17,44 +17,54 @@ const config: TConfig = {
     gap: 6, // Gap between buttons (in Tailwind size units)
     buttons: [
       {
-        name: 'Newt GitHub',
-        href: 'https://github.com/arithefirst/newt',
-        icon: 'github',
-      },
-      {
-        name: 'Amazon',
-        href: 'https://amazon.com',
-        icon: 'shopping-cart',
-      },
-      {
-        name: 'Gmail',
-        href: 'https://mail.google.com',
+        name: 'Mail',
         icon: 'mail',
+        href: 'https://mail.google.com/',
       },
       {
-        name: 'Google',
-        href: 'https://google.com',
-        icon: 'search',
+        name: 'Github',
+        icon: 'github',
+        href: 'https://github.com/',
       },
       {
-        name: 'Google Calendar',
-        href: 'https://calendar.google.com',
+        name: 'Proxmox',
+        icon: 'server',
+        href: 'https://pve.arithefirst.com',
+      },
+      {
+        name: 'Vercel',
+        icon: 'triangle',
+        href: 'https://vercel.com/april-halls-projects',
+      },
+      {
+        name: 'Cloudflare',
+        icon: 'cloud',
+        href: 'https://dash.cloudflare.com',
+      },
+      {
+        name: 'Calendar',
         icon: 'calendar',
+        href: 'https://calendar.google.com/calendar',
       },
       {
-        name: 'Spotify',
-        href: 'https://open.spotify.com',
-        icon: 'music',
-      },
-      {
-        name: 'Twitch',
-        href: 'https://twitch.tv',
-        icon: 'twitch',
+        name: 'Trilium',
+        icon: 'notebook-text',
+        href: 'https://notes.arithefirst.com',
       },
       {
         name: 'YouTube',
-        href: 'https://youtube.com',
         icon: 'youtube',
+        href: 'https://youtube.com',
+      },
+      {
+        name: 'Twitch',
+        icon: 'twitch',
+        href: 'https://twitch.tv',
+      },
+      {
+        name: 'T3 Chat',
+        icon: 'messages-square',
+        href: 'https://t3.chat',
       },
     ],
   },
@@ -93,8 +103,8 @@ const config: TConfig = {
   weather: {
     coordinates: {
       // Find yout coordinates at https://www.latlong.net
-      lat: '40.776676', // Your latitude
-      long: '-73.971321', // Your longitude
+      lat: '39.765450', // Your latitude
+      long: '-75.267387', // Your longitude
     },
     units: 'metric', // metric = C°, imperial = F°, standard = K
   },
