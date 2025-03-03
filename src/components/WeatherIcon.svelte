@@ -1,5 +1,5 @@
 <script lang="ts">
-  const { weatherCode, class: className }: { weatherCode?: string; class: string } = $props();
+  const { weatherCode }: { weatherCode?: string; class: string } = $props();
 
   function getIcon(): string {
     switch (weatherCode) {
@@ -37,5 +37,5 @@
 </script>
 
 {#key weatherCode}
-  <i data-lucide={getIcon()} class={className}></i>
+  <i data-lucide={getIcon()} class="size-8"></i>
 {/key}
