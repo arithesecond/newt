@@ -61,8 +61,8 @@ const config: TConfig = {
 
   // Config for an optional background image
   image: {
-    enabled: false,
-    src: '/background-image.png',
+    enabled: true,
+    src: '/newt/background-image.png',
   },
 
   // The greetings that get displayed
