@@ -29,12 +29,11 @@ Setting up Newt couldn't be simpler, just follow the steps below!
 
 <!-- no toc -->
 
-- [Welcome to Newt!](#welcome-to-newt)
-- [Getting started](#getting-started)
-  - [Getting a Local Copy](#getting-a-local-copy)
-  - [Customizing](#customizing)
-  - [Deploying](#deploying)
-  - [Set Newt as your newtab](#set-newt-as-your-newtab)
+1. [Get a local copy](#getting-a-local-copy)
+2. [Customize](#customizing)
+3. [Deploy your site](#deploying)
+4. [Set it as your newtab page](#set-newt-as-your-newtab)
+5. Enojy!
 
 ## Getting a Local Copy
 
@@ -116,9 +115,21 @@ Newt's behavior is controlled by `config.ts`. Below is an overview of each secti
   - `twelveHour`: Switch between 12hr or 24hr time format.
 
 - **weather:**
+
   - `coordinates`: Your latitude/longitude.
-  - `openWeatherKey`: OpenWeatherMap API Key (Can be obtained for free from https://openweathermap.org/api/one-call-3#start).
   - `units`: Metric (`C°`), Imperial (`F°`), or Standard (`K`).
+
+> [!IMPORTANT]
+> For weather to work, you must get an OpenWeatherMap API Key from https://openweathermap.org/api/one-call-3#start, and complete the following steps:
+>
+> - Go to the settings tab of your fork
+> - Click on "Secrets and variables" and then "Actions" in the menu that appears under it
+> - Click "New Repository Secret"
+> - Set the name to be `PUBLIC_WEATHER_API_KEY`
+> - Set the secret to be the API Key you got from OpenWeatherMap
+> - Click "New Secret"
+>
+> If you are still reciving the error that says "Weather API key not configured", you may need to click on `Actions > Deploy to GitHub Pages > Run Workflow` (in the top bar) to re-build newt.
 
 ## Deploying
 

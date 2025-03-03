@@ -40,7 +40,6 @@ type TWeather = {
     lat: string;
     long: string;
   };
-  openWeatherKey: string;
   units: 'imperial' | 'metric' | 'standard';
 };
 

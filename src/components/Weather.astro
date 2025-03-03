@@ -2,15 +2,15 @@
 import config from '@config';
 import WeatherIcon from './WeatherIcon.svelte';
 
+const apiKey = import.meta.env.PUBLIC_WEATHER_API_KEY;
 let weatherData = null;
 let weatherCode = null;
 let temperature = null;
 let error = null;
 
-if (config.weather.openWeatherKey !== '') {
+if (apiKey && apiKey !== 'yourkeyhere') {
   try {
     const { lat, long } = config.weather.coordinates;
-    const apiKey = config.weather.openWeatherKey;
     const units = config.weather.units;
 
     const response = await fetch(
@@ -38,7 +38,7 @@ if (config.weather.openWeatherKey !== '') {
   {
     error ? (
       <div class="text-red-400">Error: {error}</div>
-    ) : !config.weather.openWeatherKey ? (
+    ) : !apiKey || apiKey === 'yourkeyhere' ? (
       <div class="text-center text-amber-400">Weather API key not configured</div>
     ) : weatherData ? (
       <>

@@ -96,7 +96,6 @@ const config: TConfig = {
       lat: '40.776676', // Your latitude
       long: '-73.971321', // Your longitude
     },
-    openWeatherKey: '', // Get an API Key at https://openweathermap.org/api/one-call-3#start
     units: 'metric', // metric = C°, imperial = F°, standard = K
   },
 };
