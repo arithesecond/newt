@@ -29,11 +29,12 @@ Setting up Newt couldn't be simpler, just follow the steps below!
 
 <!-- no toc -->
 
-1. [Get a local copy](#getting-a-local-copy)
-2. [Customize](#customizing)
-3. [Deploy your site](#deploying)
-4. [Set it as your newtab page](#set-newt-as-your-newtab)
-5. Enojy!
+- [Welcome to Newt!](#welcome-to-newt)
+- [Getting started](#getting-started)
+  - [Getting a Local Copy](#getting-a-local-copy)
+  - [Customizing](#customizing)
+  - [Deploying](#deploying)
+  - [Set Newt as your newtab](#set-newt-as-your-newtab)
 
 ## Getting a Local Copy
 
@@ -119,16 +120,13 @@ Newt's behavior is controlled by `config.ts`. Below is an overview of each secti
   - `openWeatherKey`: OpenWeatherMap API Key (Can be obtained for free from https://openweathermap.org/api/one-call-3#start).
   - `units`: Metric (`C°`), Imperial (`F°`), or Standard (`K`).
 
-> [!IMPORTANT]
-> To ensure that your changes get saved, run `git commit -am "Update config"` and then `git push` in your CLI, to push your changes to your fork of the repo.
-
 ## Deploying
 
 To deploy Newt to a website, we're going to use GitHub pages for the sake of simplicity.
 
 1. Open the repository’s "Settings" tab.
-2. In the "Pages" section, select the branch you want to use. Unless you know what you're doing and have a different branch set, this should be `master`
-3. Hit "Save" and wait a bit for GitHub to build the site.
+2. In the "Pages" section, set "Source" to "GitHub Actions"
+3. Go back to your CLI, and run `git commit -am "Update config"`, and then `git push` to send your changes to the remote repo.
 4. Visit the provided GitHub Pages URL to see your deployed site. Unless you named your fork something other than "newt", your url should be `https://[yourusername].github.io/newt`, where `[yourusername]` is your github username.
 
 ## Set Newt as your newtab
