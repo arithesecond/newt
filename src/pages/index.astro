@@ -8,8 +8,7 @@ import Weather from '$lib/components/Weather.astro';
 const gradientBase: string = config.colors.baseBg + 'FF';
 const gradientEnd: string = config.colors.baseBg + '00';
 const src = config.image.src ?? '';
-const prefixedSrc = src.match(/^https?:\/\//) ? src : `${import.meta.env.BASE_URL}/${src}`;
-const imageSrc = `url(${prefixedSrc})`;
+const imageSrc = `url(${src.match(/^https?:\/\//) ? src : `${import.meta.env.BASE_URL}/${src}`})`;
 ---
 
 <!doctype html>
@@ -17,7 +16,7 @@ const imageSrc = `url(${prefixedSrc})`;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href={`/${import.meta.env.BASE_URL}/favicon.svg`} />
+    <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.svg`} />
     <meta name="generator" content={Astro.generator} />
     <title>Newt</title>
   </head>
