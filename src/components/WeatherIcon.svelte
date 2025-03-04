@@ -1,5 +1,7 @@
 <script lang="ts">
-  const { weatherCode }: { weatherCode?: string; class: string } = $props();
+  import { createIcons, icons } from 'lucide';
+  import { onMount } from 'svelte';
+  const { weatherCode }: { weatherCode?: string } = $props();
 
   function getIcon(): string {
     switch (weatherCode) {
@@ -34,6 +36,10 @@
         return 'hexagon';
     }
   }
+
+  onMount(() => {
+    createIcons({ icons });
+  });
 </script>
 
 {#key weatherCode}

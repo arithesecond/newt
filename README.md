@@ -37,7 +37,7 @@ Setting up Newt couldn't be simpler, just follow the steps below!
 
 ## Getting a Local Copy
 
-Before anything else, you need a copy of Newt on your computer. Make sure that you have [Git](https://git-scm.com/) and [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or an NPM compatible package manager) installed and a GitHub account, then follow the steps below.
+Before anything else, you need a copy of Newt on your computer. Make sure that you have [Git](https://docs.github.com/en/get-started/git-basics/set-up-git) and [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) (or an NPM compatible package manager) installed and your GitHub account linked to git, then follow the steps below.
 
 1. Fork the repo by scrolling to the top of this page and clicking the `Fork` button.
 2. In new page that shows up, click the `Create fork` button.
@@ -47,6 +47,7 @@ Before anything else, you need a copy of Newt on your computer. Make sure that y
 
    ```bash
    git clone URL
+   cd newt
    ```
 
    where `URL` is the URL you copied in step 4. This will download all of the code locally.
@@ -58,8 +59,6 @@ Before anything else, you need a copy of Newt on your computer. Make sure that y
    ```
 
    This will install all of the dependencies you need to preview your changes locally.
-
-You are now ready to continue to the
 
 ## Customizing
 
@@ -135,10 +134,12 @@ Newt's behavior is controlled by `config.ts`. Below is an overview of each secti
 
 To deploy Newt to a website, we're going to use GitHub pages for the sake of simplicity.
 
-1. Open the repository’s "Settings" tab.
-2. In the "Pages" section, set "Source" to "GitHub Actions"
-3. Go back to your CLI, and run `git commit -am "Update config"`, and then `git push` to send your changes to the remote repo.
-4. Visit the provided GitHub Pages URL to see your deployed site. Unless you named your fork something other than "newt", your url should be `https://[yourusername].github.io/newt`, where `[yourusername]` is your github username.
+1. Click the "Actions" button in the bar at the top
+2. Click the "I understand my workdlows" button
+3. Open the repository’s "Settings" tab.
+4. In the "Pages" section, set "Source" to "GitHub Actions"
+5. Go back to your CLI, and run `git commit -am "Update config"`, and then `git push` to send your changes to the remote repo.
+6. Visit the provided GitHub Pages URL to see your deployed site. Unless you named your fork something other than "newt", your url should be `https://[yourusername].github.io/newt`, where `[yourusername]` is your github username.
 
 ## Set Newt as your newtab
 

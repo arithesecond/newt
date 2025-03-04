@@ -14,7 +14,7 @@ permissions:
 jobs:
   build:
     env:
-      SECRET_WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+      PUBLIC_WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
