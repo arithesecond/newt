@@ -3,7 +3,7 @@ import '$lib/styles/global.css';
 import config from '@config';
 import Buttons from '$lib/components/Buttons.astro';
 import Clock from '$lib/components/Clock.svelte';
-import Weather from '$lib/components/Weather.astro';
+import Weather from '$lib/components/Weather.svelte';
 
 const gradientBase: string = config.colors.baseBg + 'FF';
 const gradientEnd: string = config.colors.baseBg + '00';
@@ -34,7 +34,7 @@ const imageSrc = `url(${src.match(/^https?:\/\//) ? src : `${import.meta.env.BAS
       </div>
       <div>
         <span class="text-8xl font-bold">{new Date().toLocaleDateString(config.locale, config.dateFormat)}</span>
-        <Weather />
+        <Weather client:load />
       </div>
     </div>
     <Buttons />
